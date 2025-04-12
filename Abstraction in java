@@ -1,0 +1,44 @@
+package com.mycompany.abstraction;
+
+public abstract class Abstraction {
+    
+    abstract void display();
+    }
+
+package com.mycompany.abstraction;
+
+
+public class Arik extends Abstraction  {
+    
+     @Override
+     void display(){
+    System.out.print("Arik ");
+    
+  }
+}
+
+package com.mycompany.abstraction;
+
+
+public class Test extends Abstraction {
+    
+     void display(){
+    System.out.print("Hasan");    
+    
+  }
+}
+package com.mycompany.abstraction;
+
+
+public class Final {
+    public static void main(String[] args) {
+        Abstraction ab;
+        ab = new Arik();
+        ab.display();
+        
+         ab = new Test();
+        ab.display();
+        
+    }
+    
+}
